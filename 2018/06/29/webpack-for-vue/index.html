@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Vue," />
+  <meta name="keywords" content="Vue,工程化," />
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="背景这算是真正的第一篇技术博客了。。。 姑且说是技术博客吧 本来写了很多的铺垫，后面想想，装逼的话就不多说了，纯属为了把这个只是点Mark一下，开始吧 先写一个vue模板先写好vue模态框模板， 并把方法，数据以及一些props定义好。如下:  &amp;lt;template&amp;gt;     &amp;lt;transition name=&amp;quot;modal-fade&amp;quot;&amp;gt;         &amp;">
-<meta name="keywords" content="Vue">
+<meta name="description" content="开始公司使用的是 APS.NET_MVC3.0 框架，并且之前写的都是基于Jquery来写的，为了赶上时代，同时，公司的项目确实是适合用Vue开发，于是，便在这个框架中搭建了一个vue开发的工程项目。 工具这个工程主要是使用 webpack 来对对应的文件进行打包编译 项目结构在Scripts中新建一个source文件夹，工程项目就放在这个文件夹下  每个文件夹各存放对应的文件 在Content中">
+<meta name="keywords" content="Vue,工程化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于vue做一个模态框">
-<meta property="og:url" content="http://yoursite.com/2018/06/27/vue-modal/index.html">
+<meta property="og:title" content="如何在APS.NET_MVC3.0 中搭建一个Vue开发工程">
+<meta property="og:url" content="http://yoursite.com/2018/06/29/webpack-for-vue/index.html">
 <meta property="og:site_name" content="John Tsang">
-<meta property="og:description" content="背景这算是真正的第一篇技术博客了。。。 姑且说是技术博客吧 本来写了很多的铺垫，后面想想，装逼的话就不多说了，纯属为了把这个只是点Mark一下，开始吧 先写一个vue模板先写好vue模态框模板， 并把方法，数据以及一些props定义好。如下:  &amp;lt;template&amp;gt;     &amp;lt;transition name=&amp;quot;modal-fade&amp;quot;&amp;gt;         &amp;">
+<meta property="og:description" content="开始公司使用的是 APS.NET_MVC3.0 框架，并且之前写的都是基于Jquery来写的，为了赶上时代，同时，公司的项目确实是适合用Vue开发，于是，便在这个框架中搭建了一个vue开发的工程项目。 工具这个工程主要是使用 webpack 来对对应的文件进行打包编译 项目结构在Scripts中新建一个source文件夹，工程项目就放在这个文件夹下  每个文件夹各存放对应的文件 在Content中">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T08:16:22.805Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/chuanqiangTsang/chuanqiangtsang.github.io/master/images/scripts.png">
+<meta property="og:updated_time" content="2018-06-29T08:08:35.226Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基于vue做一个模态框">
-<meta name="twitter:description" content="背景这算是真正的第一篇技术博客了。。。 姑且说是技术博客吧 本来写了很多的铺垫，后面想想，装逼的话就不多说了，纯属为了把这个只是点Mark一下，开始吧 先写一个vue模板先写好vue模态框模板， 并把方法，数据以及一些props定义好。如下:  &amp;lt;template&amp;gt;     &amp;lt;transition name=&amp;quot;modal-fade&amp;quot;&amp;gt;         &amp;">
+<meta name="twitter:title" content="如何在APS.NET_MVC3.0 中搭建一个Vue开发工程">
+<meta name="twitter:description" content="开始公司使用的是 APS.NET_MVC3.0 框架，并且之前写的都是基于Jquery来写的，为了赶上时代，同时，公司的项目确实是适合用Vue开发，于是，便在这个框架中搭建了一个vue开发的工程项目。 工具这个工程主要是使用 webpack 来对对应的文件进行打包编译 项目结构在Scripts中新建一个source文件夹，工程项目就放在这个文件夹下  每个文件夹各存放对应的文件 在Content中">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/chuanqiangTsang/chuanqiangtsang.github.io/master/images/scripts.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/27/vue-modal/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/29/webpack-for-vue/"/>
 
 
 
 
 
-  <title>基于vue做一个模态框 | John Tsang</title>
+  <title>如何在APS.NET_MVC3.0 中搭建一个Vue开发工程 | John Tsang</title>
   
 
 
@@ -265,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/chuanqiangtsang.github.io/2018/06/27/vue-modal/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/chuanqiangtsang.github.io/2018/06/29/webpack-for-vue/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Tsang">
@@ -282,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">基于vue做一个模态框</h1>
+          <h1 class="post-title" itemprop="name headline">如何在APS.NET_MVC3.0 中搭建一个Vue开发工程</h1>
         
 
         <div class="post-meta">
@@ -294,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-27T09:50:45+08:00">
-                2018-06-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-29T15:12:01+08:00">
+                2018-06-29
               </time>
             
 
@@ -317,8 +319,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/chuanqiangtsang.github.io/categories/每天撸会儿Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">每天撸会儿Vue</span>
+                  <a href="/chuanqiangtsang.github.io/categories/工程化/" itemprop="url" rel="index">
+                    <span itemprop="name">工程化</span>
                   </a>
                 </span>
 
@@ -354,76 +356,103 @@
       
 
       
-        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>这算是真正的第一篇<em>技术</em>博客了。。。</p>
-<p>姑且说是技术博客吧</p>
-<p>本来写了很多的铺垫，后面想想，装逼的话就不多说了，纯属为了把这个只是点Mark一下，开始吧</p>
-<h1 id="先写一个vue模板"><a href="#先写一个vue模板" class="headerlink" title="先写一个vue模板"></a>先写一个vue模板</h1><p>先写好vue模态框模板， 并把方法，数据以及一些props定义好。<br>如下: </p>
-<pre><code>&lt;template&gt;
-    &lt;transition name=&quot;modal-fade&quot;&gt;
-        &lt;div id=&quot;modal&quot; class=&quot;jfl-modal_wrapper&quot; v-show=&quot;visible&quot;&gt;
-            &lt;!-- 自定义的内容 --&gt;
-        &lt;/div&gt;
-    &lt;/transition&gt;
-&lt;/template&gt;
-&lt;script&gt;
-    export default {
-        name: &apos;jModal&apos;,
-        data(){
-            return {
-                ...
-            }
-        },
-        props: {
-            ...
+        <h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>公司使用的是 APS.NET_MVC3.0 框架，并且之前写的都是基于Jquery来写的，为了赶上时代，同时，公司的项目确实是适合用Vue开发，于是，便在这个框架中搭建了一个vue开发的工程项目。</p>
+<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p>这个工程主要是使用 webpack 来对对应的文件进行打包编译</p>
+<h1 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h1><p>在Scripts中新建一个source文件夹，工程项目就放在这个文件夹下</p>
+<p><img src="https://raw.githubusercontent.com/chuanqiangTsang/chuanqiangtsang.github.io/master/images/scripts.png" alt="image"></p>
+<p>每个文件夹各存放对应的文件</p>
+<p>在Content中新建一个build文件夹，打包出来的文件就放在这个文件夹下</p>
+<h1 id="webpack配置文件"><a href="#webpack配置文件" class="headerlink" title="webpack配置文件"></a>webpack配置文件</h1><p>这个配置文件，基本满足基本开发，代码如下：</p>
+<pre><code>const webpack = require(&apos;webpack&apos;)
+const path = require(&apos;path&apos;)
+const VueLoaderPlugin = require(&apos;vue-loader/lib/plugin&apos;)
 
-            // 是否显示
-            visible: Boolean,
+module.exports = {
+entry: {
+    a: &apos;a.js&apos;,
+    b: &apos;b.js&apos;,
+},
+output: {
+    path: path.resolve(__dirname, &apos;../../Content/build/&apos;),
+    filename: &apos;[name].js&apos;,
+    publicPath: &apos;../../Content/build/&apos;,  // 相对目录
+},
+module: {
+    rules: [
+    {
+        test: /\.vue$/,
+        loader: &apos;vue-loader&apos;
+    },
+    // 它会应用到普通的 `.js` 文件
+    // 以及 `.vue` 文件中的 `&lt;script&gt;` 块
+    {
+        test: /\.js$/,
+        loader: &apos;babel-loader&apos;,
+        exclude: file =&gt; (
+        /node_modules/.test(file) &amp;&amp;
+        !/\.vue\.js/.test(file)
+        )
+    },
+    // 它会应用到普通的 `.css` 文件
+    // 以及 `.vue` 文件中的 `&lt;style&gt;` 块
+    {
+        test: /\.css$/,
+        use: [
+        &apos;vue-style-loader&apos;,
+        &apos;css-loader&apos;
+        ]
+    },
 
-            ... 
-        },
-        methods: {
-            ...
-            closeModal(){
-                // props的双向绑定
-                this.$emit(&apos;update:visible&apos;, false)
-            },
-
-            ...
-        }
-    }
-&lt;/script&gt;
-</code></pre><h1 id="props的双向绑定"><a href="#props的双向绑定" class="headerlink" title="props的双向绑定"></a>props的双向绑定</h1><p>我们知道子组件无法直接取修改父组件的数据，因此，Vue提供了<font style="color: red">.sync</font> 修饰符, 用update:my-prop-name的模式触发事件。<br>假设我想在子组件关闭modal，并且把改变后的visible传递到父组件，如下：</p>
-<pre><code>this.$emit(&apos;update:visible&apos;, false)
-</code></pre><p>父组件绑定只需要在用 sync 修饰visible即可， 如下：</p>
-<pre><code>&lt;j-modal :visible.sync=&quot;isVisible&quot;&gt;&lt;/j-modal&gt;
-</code></pre><p><font style="color: red; font-size: 16px;">到这里，模态框组件就算是完成了，接下来是把这个组件注册到全局的Vue对象上</font><br><br></p>
-<h1 id="把组件注册到全局Vue对象上"><a href="#把组件注册到全局Vue对象上" class="headerlink" title="把组件注册到全局Vue对象上"></a>把组件注册到全局Vue对象上</h1><p>这里我写了一个比较通用的方式，方便后续添加</p>
-<pre><code>import jModal from &apos;./modal.vue&apos;
-const Components = [
-    jflModal
+    //图片文件
+    {
+        test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+        loader: &apos;url-loader?limit=8192&amp;name=[hash:8].[name].[ext]&apos;
+    },
+    ]
+},
+plugins: [
+    // 请确保引入这个插件！
+    new VueLoaderPlugin()
 ]
-
-const install = (Vue) =&gt;{
-    // 注册组件    
-    Components.map( comp =&gt;{
-        Vue.component(comp.name, comp)
-    })
 }
-
-if( window.Vue !== &apos;undefined&apos;){
-    install(window.Vue)
+</code></pre><h1 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h1><pre><code>{
+&quot;name&quot;: &quot;webpack&quot;,
+&quot;version&quot;: &quot;1.0.0&quot;,
+&quot;description&quot;: &quot;&quot;,
+&quot;main&quot;: &quot;index.js&quot;,
+&quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+},
+&quot;keywords&quot;: [],
+&quot;author&quot;: &quot;&quot;,
+&quot;license&quot;: &quot;ISC&quot;,
+&quot;devDependencies&quot;: {
+        &quot;babel-core&quot;: &quot;^6.26.3&quot;,
+        &quot;babel-loader&quot;: &quot;^7.1.4&quot;,
+        &quot;babel-plugin-transform-runtime&quot;: &quot;^6.23.0&quot;,
+        &quot;babel-polyfill&quot;: &quot;^6.26.0&quot;,
+        &quot;babel-preset-env&quot;: &quot;^1.7.0&quot;,
+        &quot;babel-preset-es2015&quot;: &quot;^6.24.1&quot;,
+        &quot;babel-runtime&quot;: &quot;^6.26.0&quot;,
+        &quot;css-loader&quot;: &quot;^0.28.11&quot;,
+        &quot;extract-text-webpack-plugin&quot;: &quot;^3.0.2&quot;,
+        &quot;jquery&quot;: &quot;^3.3.1&quot;,
+        &quot;style-loader&quot;: &quot;^0.21.0&quot;,
+        &quot;uglifyjs-webpack-plugin&quot;: &quot;^1.2.5&quot;,
+        &quot;url-loader&quot;: &quot;^1.0.1&quot;,
+        &quot;validate&quot;: &quot;^4.4.1&quot;,
+        &quot;vue&quot;: &quot;^2.5.16&quot;,
+        &quot;vue-loader&quot;: &quot;^15.2.4&quot;,
+        &quot;vue-style-loader&quot;: &quot;^4.1.0&quot;,
+        &quot;vue-template-compiler&quot;: &quot;^2.5.16&quot;,
+        &quot;webpack&quot;: &quot;^4.11.1&quot;
+    }
 }
-export default {
-    install
-}
-</code></pre><p>解释一下，大致流程就是：引入组件 -&gt; 存入数组 -&gt; 循环注册</p>
-<p>存入数组是为了方便后续添加组件，我只需要往 Components 数组里面添加就行了，剩下的都交给 install 方法。</p>
-<p>最后暴露出一个 install 方法， 接下来只需要在引用的时候, 引入一下这个 install 方法就行了</p>
-<pre><code>import Install from &apos;path-to-file&apos;
-</code></pre><p>因为是这个组件是全局的，所以直接使用就可以了。</p>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>本以为可以写的简洁一点，没想到，还是写的比较乱，单纯的Mark知识点，关键的点就是 <font style="color: red">props’双向数据绑定’</font>以及<font style="color: red">全局注册组件</font>，掌握这两点，就能很简单实现自定义全局组件了。</p>
-<p>至于一些回调函数，就根据需求，自行去设计就行了。</p>
-<p>每天撸会儿Vue， 加油吧。。。</p>
+</code></pre><p>有了以上文件，就可以对相应的文件进行编译了</p>
+<p>在CMD执行webpack –watch 就可以实现实时编译</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>这算是一个简单的demo， 如果需要其他的loader，自行配置即可</p>
+<p>搭建好这个工程，我们可以进行模块化开发，将可以公共出来的类，方法放入相应的模块中，在需要的地方引用即可</p>
+<p>其实，关键的地方，就是配置 webpack打包文件，剩下的都是按需创建就行了。</p>
 
       
     </div>
@@ -443,6 +472,8 @@ export default {
           
             <a href="/chuanqiangtsang.github.io/tags/Vue/" rel="tag"># Vue</a>
           
+            <a href="/chuanqiangtsang.github.io/tags/工程化/" rel="tag"># 工程化</a>
+          
         </div>
       
 
@@ -454,15 +485,15 @@ export default {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/chuanqiangtsang.github.io/2018/06/28/vue-messager/" rel="next" title="基于vue的Messager提示">
+                <i class="fa fa-chevron-left"></i> 基于vue的Messager提示
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/chuanqiangtsang.github.io/2018/06/28/vue-messager/" rel="prev" title="基于vue的Messager提示">
-                基于vue的Messager提示 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -594,7 +625,7 @@ export default {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#先写一个vue模板"><span class="nav-number">2.</span> <span class="nav-text">先写一个vue模板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#props的双向绑定"><span class="nav-number">3.</span> <span class="nav-text">props的双向绑定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#把组件注册到全局Vue对象上"><span class="nav-number">4.</span> <span class="nav-text">把组件注册到全局Vue对象上</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">5.</span> <span class="nav-text">结语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#开始"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#工具"><span class="nav-number">2.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目结构"><span class="nav-number">3.</span> <span class="nav-text">项目结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack配置文件"><span class="nav-number">4.</span> <span class="nav-text">webpack配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-json"><span class="nav-number">5.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">6.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
 
           </div>
