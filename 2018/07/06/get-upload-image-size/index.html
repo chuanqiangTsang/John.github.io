@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Javascript," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="John Tsang">
-<meta property="og:url" content="http://yoursite.com/tags/工程化/index.html">
+<meta name="description" content="开始我们知道，使用文件域上传文件时，我们可以获取到文件的大小(size)，但是无法获取到文件的宽高，假如上传时，有宽高限制，我们就需要用一些别的方法来获取到图片的宽高了。 当然， 有一些上传插件可以获取到，假如不使用上传插件，如何做到呢？ 思路事先准备好一个img标签用以暂时存放图片当获取到文件域中的图片时，使用fileReader中的readAsDataURL方法，把文件按照dataurl方式来">
+<meta name="keywords" content="Javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何获取上传图片的尺寸(宽高)">
+<meta property="og:url" content="http://yoursite.com/2018/07/06/get-upload-image-size/index.html">
 <meta property="og:site_name" content="John Tsang">
+<meta property="og:description" content="开始我们知道，使用文件域上传文件时，我们可以获取到文件的大小(size)，但是无法获取到文件的宽高，假如上传时，有宽高限制，我们就需要用一些别的方法来获取到图片的宽高了。 当然， 有一些上传插件可以获取到，假如不使用上传插件，如何做到呢？ 思路事先准备好一个img标签用以暂时存放图片当获取到文件域中的图片时，使用fileReader中的readAsDataURL方法，把文件按照dataurl方式来">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-06T08:39:20.152Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="John Tsang">
+<meta name="twitter:title" content="如何获取上传图片的尺寸(宽高)">
+<meta name="twitter:description" content="开始我们知道，使用文件域上传文件时，我们可以获取到文件的大小(size)，但是无法获取到文件的宽高，假如上传时，有宽高限制，我们就需要用一些别的方法来获取到图片的宽高了。 当然， 有一些上传插件可以获取到，假如不使用上传插件，如何做到呢？ 思路事先准备好一个img标签用以暂时存放图片当获取到文件域中的图片时，使用fileReader中的readAsDataURL方法，把文件按照dataurl方式来">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/工程化/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/06/get-upload-image-size/"/>
 
 
 
 
 
-  <title>标签: 工程化 | John Tsang</title>
+  <title>如何获取上传图片的尺寸(宽高) | John Tsang</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,54 +251,196 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>工程化<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/chuanqiangtsang.github.io/2018/07/06/get-upload-image-size/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Tsang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/chuanqiangtsang.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="John Tsang">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/chuanqiangtsang.github.io/2018/06/29/webpack-for-vue/" itemprop="url">
-              
-                <span itemprop="name">如何在APS.NET_MVC3.0 中搭建一个Vue开发工程</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">如何获取上传图片的尺寸(宽高)</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-29T15:12:01+08:00"
-              content="2018-06-29" >
-          06-29
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-06T16:20:29+08:00">
+                2018-07-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/chuanqiangtsang.github.io/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>我们知道，使用文件域上传文件时，我们可以获取到文件的大小(size)，但是无法获取到文件的宽高，假如上传时，有宽高限制，我们就需要用一些别的方法来获取到图片的宽高了。</p>
+<p>当然， 有一些上传插件可以获取到，假如不使用上传插件，如何做到呢？</p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>事先准备好一个img标签用以暂时存放图片<br>当获取到文件域中的图片时，使用fileReader中的readAsDataURL方法，把文件按照dataurl方式来读取，并把生成的url赋值给事前准备好的img, 最后获取该图片的尺寸即可。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>文件域</p>
+<pre><code>&lt;input type=&quot;file&quot; id=&quot;file&quot; /&gt;
+</code></pre><p>暂时存放图片的img标签</p>
+<pre><code>&lt;img id=&quot;img&quot; src=&quot;&quot; alt=&quot;&quot;&gt;
+</code></pre><p>上传事件</p>
+<pre><code>  $(&apos;#file&apos;).change(function(){
+    var file = $(&apos;#file&apos;)[0].files;
+    var fileReader = new FileReader();
+    fileReader.readAsDataURL(file[0]);
+
+    // 读取完成
+    fileReader.onload = (e)=&gt;{
+        var url = e.currentTarget.result;
+        $(&apos;#img&apos;).attr(&apos;src&apos;, url);
+    }
+});  
+</code></pre><font style="color: red">此时就会将上传的图片在html中预览出来</font>
+
+<p>在获取预览图片的宽高即可</p>
+<pre><code>var w = $(&apos;#img&apos;).width();
+var h = $(&apos;#img&apos;).height();
+
+alert(&apos;宽度是：&apos; + w + &apos;高度是：&apos; + h)
+</code></pre><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>以上， 就可以获取到上传时图片的宽高了，如果上传的要求中有宽高尺寸的限制，就可以通过这个方法去进行判断了。</p>
+<p>另外， 上传图片预览也可用此方法。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/chuanqiangtsang.github.io/tags/Javascript/" rel="tag"># Javascript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/chuanqiangtsang.github.io/2018/07/05/window-open/" rel="next" title="使用window.open打开新窗口被浏览器拦截解决方案">
+                <i class="fa fa-chevron-left"></i> 使用window.open打开新窗口被浏览器拦截解决方案
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -301,6 +448,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -321,8 +472,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -382,6 +542,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#开始"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思路"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">4.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -522,6 +698,10 @@
 
 
   
+  <script type="text/javascript" src="/chuanqiangtsang.github.io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/chuanqiangtsang.github.io/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
