@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="," />
+  <meta name="keywords" content="Javascript," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="这是我的个人简历哦">
-<meta name="keywords" content="A">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我">
-<meta property="og:url" content="http://yoursite.com/resume/index.html">
+<meta name="description" content="开始触底加载更多。 原理解释上拉卷起部分(ScrollTop) + 浏览器视口的高度(windowHeight) = 文档高度(documentHeight)。 上拉卷起部分 function getScrollTop(){     var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;     if(document.body){">
+<meta name="keywords" content="Javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用JS判断是否触底">
+<meta property="og:url" content="http://yoursite.com/2018/08/15/touch-bottom/index.html">
 <meta property="og:site_name" content="John Tsang">
-<meta property="og:description" content="这是我的个人简历哦">
+<meta property="og:description" content="开始触底加载更多。 原理解释上拉卷起部分(ScrollTop) + 浏览器视口的高度(windowHeight) = 文档高度(documentHeight)。 上拉卷起部分 function getScrollTop(){     var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;     if(document.body){">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-26T02:49:06.223Z">
+<meta property="og:updated_time" content="2018-08-15T01:53:22.842Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我">
-<meta name="twitter:description" content="这是我的个人简历哦">
+<meta name="twitter:title" content="用JS判断是否触底">
+<meta name="twitter:description" content="开始触底加载更多。 原理解释上拉卷起部分(ScrollTop) + 浏览器视口的高度(windowHeight) = 文档高度(documentHeight)。 上拉卷起部分 function getScrollTop(){     var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;     if(document.body){">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/resume/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/15/touch-bottom/"/>
 
 
 
 
 
-  <title>我 | John Tsang</title>
+  <title>用JS判断是否触底 | John Tsang</title>
   
 
 
@@ -253,33 +253,208 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/chuanqiangtsang.github.io/2018/08/15/touch-bottom/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Tsang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/chuanqiangtsang.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="John Tsang">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">我</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="这是我的个人简历哦"><a href="#这是我的个人简历哦" class="headerlink" title="这是我的个人简历哦"></a>这是我的个人简历哦</h1>
+          <h1 class="post-title" itemprop="name headline">用JS判断是否触底</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-15T09:36:10+08:00">
+                2018-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/chuanqiangtsang.github.io/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>触底加载更多。</p>
+<h1 id="原理解释"><a href="#原理解释" class="headerlink" title="原理解释"></a>原理解释</h1><p>上拉卷起部分(ScrollTop) + 浏览器视口的高度(windowHeight) = 文档高度(documentHeight)。</p>
+<p><br><br>上拉卷起部分</p>
+<pre><code>function getScrollTop(){
+    var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+    if(document.body){
+        bodyScrollTop = document.body.scrollTop;
+    }
+    if(document.documentElement){
+        documentScrollTop = document.documentElement.scrollTop;
+    }
+    scrollTop = (bodyScrollTop - documentScrollTop &gt; 0) ? bodyScrollTop : documentScrollTop;
+    return scrollTop;
+}
+</code></pre><p>浏览器视口的高度</p>
+<pre><code>function getWindowHeight(){
+    var windowHeight = 0;
+    if(document.compatMode == &quot;CSS1Compat&quot;){
+        windowHeight = document.documentElement.clientHeight;
+    }else{
+        windowHeight = document.body.clientHeight;
+    }
+    return windowHeight;
+}
+</code></pre><p>文档高度</p>
+<pre><code>function getScrollHeight(){
+    var scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
+    if(document.body){
+        bodyScrollHeight = document.body.scrollHeight;
+    }
+    if(document.documentElement){
+        documentScrollHeight = document.documentElement.scrollHeight;
+    }
+    scrollHeight = (bodyScrollHeight - documentScrollHeight &gt; 0) ? bodyScrollHeight : documentScrollHeight;
+    return scrollHeight;
+}
+</code></pre><p>判断</p>
+<pre><code>window.onscroll = function(){
+    if(getScrollTop() + getWindowHeight() == getScrollHeight()){
+        alert(&apos;触底了&apos;)
+    }
+}
+</code></pre><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>方便使用，所以Mark一波。</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/chuanqiangtsang.github.io/tags/Javascript/" rel="tag"># Javascript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/chuanqiangtsang.github.io/2018/08/09/node/" rel="next" title="从一个简易留言板体验全栈">
+                <i class="fa fa-chevron-left"></i> 从一个简易留言板体验全栈
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -392,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#这是我的个人简历哦"><span class="nav-number">1.</span> <span class="nav-text">这是我的个人简历哦</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#开始"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原理解释"><span class="nav-number">2.</span> <span class="nav-text">原理解释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
 
           </div>
